@@ -1,0 +1,210 @@
+print()
+print("----------------🎮 Smart Python Quiz Game 🎮-------------")
+print()
+name=input("Enter your name : ")
+print()
+print(f"👋 Welcome {name} !")
+print()
+input("Press Enter for rules....")
+print()
+print("📜 Rules of the Game : ")
+print("1. Each question carries 1 mark !! ")
+print("2. Correct Answer = 1 point")
+print("3. No Negative Marking ")
+print()
+input("Press Enter to start the game....")
+print()
+while True:
+    print("----------There a 3 Levels----------------")
+    print()
+    print("1. Easy 😄")
+    print("2. Medium 😊")
+    print("3. Hard 🫡")
+    print()
+    input("Press Enter to start...")
+    score=0
+    print("========== Level 1 : Easy ==============")
+    print()
+    print("Q1. What is the result of floor division of 5 by 2 in Python? ")
+    print("A. 2.5")
+    print("B. 2")
+    print("C. 3")
+    print("4. 2.0")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="B":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : B ")
+    print()
+    print(f"Q2. What will be the output when two strings 'Hello' and 'World' are added using + operator? ")
+    print("A. Hello World")
+    print("B. HelloWorld")
+    print("C. Error")
+    print("4. Hello+World")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="B":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : B ")
+    print()       
+    print("Q3. If a variable x = 10, what will be printed when checking if x > 5?")
+    print("A. Yes")
+    print("B. No")
+    print("C. Error")
+    print("4. Nothing")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="A":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : A ")
+    print()
+    print("🎉 Level 1 Completed!")
+    print()
+    print("========== Level 2 : Medium ==============")
+    print()
+    print("Q1. What numbers are printed when a loop runs from range(3) ?")
+    print("A. 1 2 3")
+    print("B. 0 1 2")
+    print("C. 0 1 2 3")
+    print("4. Error")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="B":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : B ")
+    print()
+    print(f"Q2. What is the output of a function that returns the square of a number when called with 3? ")
+    print("A. 6")
+    print("B. 9")
+    print("C. 3")
+    print("4. Error")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="B":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : B ")
+    print()       
+    print(f"Q3. What will be the result when slicing the string 'python' from index 0 to 4?")
+    print("A. pyth")
+    print("B. pytho")
+    print("C. python")
+    print("4. ytho")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="A":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : A ")
+    print()
+    print("🎉 Level 2 Completed!\n")
+    print("========== Level 3 : Hard ==============")
+    print()
+    print("Q1. What happens when a list [1, 2, 3] is multiplied by 2? ")
+    print("A. Each element is doubled")
+    print("B. The list is repeated twice")
+    print("C. Error")
+    print("4. Elements are squared")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="B":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : B ")
+    print()
+    print(f"Q2. What will be printed if a loop breaks when the value becomes 3 (range starts from 1 to 4)?")
+    print("A. 1 2 3 4")
+    print("B. 1 2")
+    print("C. 1 2 3")
+    print("4. 2 3")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="B":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : B ")
+    print()       
+    print("Q3.What is returned when accessing a missing key in a dictionary using .get() with default value 0?")
+    print("A. Error")
+    print("B. None")
+    print("C. 0")
+    print("4. Key Name")
+    print()
+    ans=(input("enter your answer : ")).upper()
+    print()
+    if ans=="C":
+        print("✅ Correct Answer ")
+        print("⭐ 1 point ")
+        score+=1 
+    else:
+        print()
+        print("Wrong answer")
+        print("correct answer is : C ")
+    print()
+
+    print("Quiz Completed 🥳 ")
+    print()
+    print(f"🎯 Final Score : {score}/9 ")
+    if score>=7:
+        print("😎 Excellent ! You are a Pro player")
+    elif score>=5:
+        print("😄 Super ! You are a Good Player")
+    else:
+        print("😊 Doing well ! Practice more Decent player ")
+    print() 
+
+    again=input("Do YOU WANT TO [PLAY AGAIN] 😉 ? (YES/NO) : ").upper()
+    print()
+    if again!="YES":
+        print("EXiting Game...See you again 💗")
+        print()
+        break
+
+    
+
+
+
